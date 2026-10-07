@@ -1,8 +1,8 @@
 #navbar {
     flex-direction: column;
     background-color: #C2E7DA;
+    box-shadow: 0px 2px 20px   #6290C3;
     padding: 2px;
-    border: solid 2px black;
 }
 
 #navbar ul{
@@ -14,12 +14,31 @@
 #navbar ul a{
     text-decoration: none;
     color: black;
-    border: solid 2px #6290C3;
     padding-left: 10px;
     padding-right: 10px;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#navbar ul a:hover{
+    color: white;
+    background-color: #6290C3;
+    transition-duration: .5s;
+}
+
+#navbar ul a:nth-child(1){
+    background-color: #6290C3;
+}
+
+#navbar ul a li{
+
+}
+
+
+
+#navbar ul a li h3{
+    color: #C2E7DA;
 }
 
