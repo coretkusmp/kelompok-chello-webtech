@@ -1,9 +1,17 @@
 form {
-
+    display:flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 form h3{
-
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 form ul{
@@ -11,5 +19,11 @@ form ul{
 }
 
 form ul li {
-    
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.tiny-desc {
+    font-size: 10px;
 }
