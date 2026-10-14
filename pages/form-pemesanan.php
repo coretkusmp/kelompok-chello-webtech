@@ -56,16 +56,20 @@
 
          <li>
             <div class="input-box"><span>
+                <div class="label-wrapper">
                   <label>Jumlah Penumpang</label>
                   <label class="tiny-desc"><span>Bukan Lansia (Usia &lt; 60)</span></label>
-               </span> <input type="text"></div>
+                </span> <input type="text"></div>
+                </div>
          </li>
 
          <li>
             <div class="input-box"><span>
+                <div class="label-wrapper">
                   <label>Jumlah penumpang Lansia</label>
                   <label class="tiny-desc"><span>Usia 60 Tahun ke Atas</span></label>
-               </span> <input type="text"></div>
+                </span> <input type="text"></div>
+                </div>
          </li>
 
          <li>
