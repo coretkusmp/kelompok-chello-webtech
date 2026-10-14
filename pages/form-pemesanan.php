@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="form.css">
+<!-- Ingat, lansia diskon 10% -->
+ 
+<link rel="stylesheet" href="/style/form.css">
 <link rel="stylesheet" href="/style/navbar.css">
 <link rel="stylesheet" href="/style/base.css">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
 
 <body>
-    <?php require __DIR__ . "/../components/navbar.php" ?>
+   <?php require __DIR__ . "/../components/navbar.php" ?>
 
-    <form method="post" action="">
-        <h3>Form Pemesanan</h3>
-        <ul>
-            <li>
-                <div class="input-box">
-                    <p>Nama Lengkap</p> <input type="text">
-                </div>
-            </li>
-            <li>
-                <div class="input-box">
-                    <p>Nomor Identitas</p> <input type="text">
-                </div>
-            </li>
-            <li>
-                <div class="input-box">
-                    <p>No. HP</p> <input type="text">
-                </div>
-            </li>
-            <li>
-                <div class="input-box">
-                    <p>Kelas Penumpang</p>
-                    <select name="class" id="class">
-                        <option value="economy">Economy</option>
-                        <option value="bussiness">Bussiness</option>
-                        <option value="executive">Executive</option>
-                    </select>
-                </div>
-            </li>
+   <form method="post" action="">
+      <h3>Form Pemesanan</h3>
+      <ul>
 
-            <li>
-                <div class="input-box">
-                    <p>Jadwal Keberangkatan</p> <input type="date">
-                </div>
-            </li>
-            <li>
-                <div class="input-box"><span>
-                        <p>Jumlah Penumpang</p>
-                        <p class="tiny-desc">Bukan Lansia (Usia < 60)</p>
-                    </span> <input type="text"></div>
-            </li>
-            <li>
-                <div class="input-box"><span>
-                        <p>Jumlah penumpang Lansia</p>
-                        <p class="tiny-desc">Usia 60 Tahun ke Atas</p>
-                    </span> <input type="text"></div>
-            </li>
-            <li>
-                <div class="input-box">
-                    <p>Harga Tiket</p>
-                    <p id=""></p>
-                </div>
-            </li>
-            <li>
-                <div class="input-box">
-                    <p>Total Bayar</p>
-                </div>
-            </li>
-        </ul>
-    </form>
+         <li>
+            <div class="input-box">
+               <label>Nama Lengkap</label> <input type="text">
+            </div>
+         </li>
+
+         <li>
+            <div class="input-box">
+               <label>Nomor Identitas</label> <input type="text">
+            </div>
+         </li>
+
+         <li>
+            <div class="input-box">
+               <label>No. HP</label> <input type="text">
+            </div>
+         </li>
+
+         <li>
+            <div class="input-box">
+               <label>Kelas Penumpang</label>
+               <select name="class" id="class">
+                  <option value="economy">Economy</option>
+                  <option value="bussiness">Bussiness</option>
+                  <option value="executive">Executive</option>
+               </select>
+            </div>
+         </li>
+
+         <li>
+            <div class="input-box">
+               <label>Jadwal Keberangkatan</label> <input type="date">
+            </div>
+         </li>
+
+         <li>
+            <div class="input-box"><span>
+                  <label>Jumlah Penumpang</label>
+                  <label class="tiny-desc"><span>Bukan Lansia (Usia &lt; 60)</span></label>
+               </span> <input type="text"></div>
+         </li>
+
+         <li>
+            <div class="input-box"><span>
+                  <label>Jumlah penumpang Lansia</label>
+                  <p class="tiny-desc"><span>Usia 60 Tahun ke Atas</span></label>
+               </span> <input type="text"></div>
+         </li>
+
+         <li>
+            <div class="input-box">
+               <label>Harga Tiket</label>
+               <p id="ticket-price"></label>
+            </div>
+         </li>
+
+         <li>
+            <div class="input-box">
+               <p id="total-price">Total Bayar</label>
+            </div>
+         </li>
+
+      </ul>
+      <br>
+      <input type="checkbox">
+   </form>
 </body>
+
 <script src="form.js"></script>
 
 </html>
