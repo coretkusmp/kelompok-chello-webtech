@@ -59,8 +59,8 @@
                 <div class="label-wrapper">
                   <label>Jumlah Penumpang</label>
                   <label class="tiny-desc"><span>Bukan Lansia (Usia &lt; 60)</span></label>
+                  </div>
                 </span> <input type="text"></div>
-                </div>
          </li>
 
          <li>
@@ -68,8 +68,8 @@
                 <div class="label-wrapper">
                   <label>Jumlah penumpang Lansia</label>
                   <label class="tiny-desc"><span>Usia 60 Tahun ke Atas</span></label>
+                  </div>
                 </span> <input type="text"></div>
-                </div>
          </li>
 
          <li>
