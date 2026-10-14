@@ -1,29 +1,59 @@
 form {
-    display:flex;
+    display: flex;
     padding: 0px;
-    margin: 0px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin: 50px auto;
+    max-width: 700px;
 }
 
-form h3{
+form h3 {
     font-family: 'Arial', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-form ul{
-
+form ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 form ul li {
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-weight: normal;
+    list-style-type: none;
+    margin-bottom: 12px; 
 }
 
 .tiny-desc {
     font-size: 10px;
+    color: #666;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-box > label,
+.input-box .label-wrapper {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input,
+.input-box select {
+    flex: 1;
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
