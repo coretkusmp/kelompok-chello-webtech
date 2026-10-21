@@ -211,7 +211,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ticketPrices[passengerClass.value]
    );
 
-   totalPrice.textContent = "Total Bayar: Rp0";
+   totalPrice.textContent = "Rp 0";
+   ticketPrice.textContent = "Rp 0";
+   classImage.style.display = "none";
   }
  });
 
