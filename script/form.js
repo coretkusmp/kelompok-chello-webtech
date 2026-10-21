@@ -75,20 +75,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
  regularPassengerInput.addEventListener("input", () => {
   validatePassengerInput(regularPassengerInput);
+  // calculateTotal();
+ });
+
+ btnTombolBayar.addEventListener("click", (event) => {
+  event.preventDefault();
+  updateTicketPrice();
   calculateTotal();
  });
 
  elderlyPassengerInput.addEventListener("input", () => {
   validatePassengerInput(elderlyPassengerInput);
-  calculateTotal();
+  // calculateTotal();
  });
 
- passengerClass.addEventListener("change", updateTicketPrice);
+ // passengerClass.addEventListener("change", updateTicketPrice);
 
  calculateButton.addEventListener("click", (event) => {
   event.preventDefault();
 
-  calculateTotal();
+  // calculateTotal();
  });
 
  orderButton.addEventListener("click", (event) => {
