@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const price = ticketPrices[selectedClass];
 
   if (selectedClass === "none") {
-   ticketPrice.textContent = "-";
+   ticketPrice.textContent = "Rp 0";
    classImage.style.display = "none";
   } else {
    ticketPrice.textContent = formatRupiah(price);
