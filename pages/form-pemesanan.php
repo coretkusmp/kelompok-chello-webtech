@@ -103,9 +103,6 @@
          <a href="#"><button class="btn">Hitung Total Bayar</button></a>
          <a href="#"><button class="btn">Pesan Tiket</button></a>
          <a href="#"><button class="btn">Cancel</button></a>
-         <a href="#"><button id="btnTombolBayar">Hitung Total Bayar</button></a>
-         <a href="#"><button>Pesan Tiket</button></a>
-         <a href="#"><button>Cancel</button></a>
       </div>
 
    </form>
