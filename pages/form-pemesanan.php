@@ -100,7 +100,7 @@
       </div>
 
       <div class="buttons">
-         <a href="#"><button class="btn btnTombolBayar">Hitung Total Bayar</button></a>
+         <a href="#"><button class="btn" id="btnTombolBayar">Hitung Total Bayar</button></a>
          <a href="#"><button class="btn">Pesan Tiket</button></a>
          <a href="#"><button class="btn">Cancel</button></a>
       </div>
