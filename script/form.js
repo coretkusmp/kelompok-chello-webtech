@@ -231,6 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
  regularPassengerInput.value = 0;
  elderlyPassengerInput.value = 0;
 
- passengerClass.value = "economy";
+ passengerClass.value = "none";
  updateTicketPrice();
 });

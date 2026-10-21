@@ -41,6 +41,7 @@
             <div class="input-box">
                <label>Kelas Penumpang</label>
                <select name="class" id="class">
+                  <option value="none">-</option>
                   <option value="economy">Economy</option>
                   <option value="bussiness">Bussiness</option>
                   <option value="executive">Executive</option>
