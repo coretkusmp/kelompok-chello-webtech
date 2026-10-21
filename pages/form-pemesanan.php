@@ -88,12 +88,15 @@
 
       </ul>
       <br>
-      <div><input type="checkbox"> <label>saya dan&#47atau rombongan telah membaca, memahami, dan setuju berdasarkan syarat dan ketentuan yang telah ditetapkan</label></div>
+      <div class="checkbox-style">
+         <input type="checkbox"> 
+         <label>Saya dan&#47atau rombongan telah membaca, memahami, dan setuju berdasarkan syarat dan ketentuan yang telah ditetapkan</label>
+      </div>
 
       <div class="buttons">
-         <a href="#"><button>Hitung Total Bayar</button></a>
-         <a href="#"><button>Pesan Tiket</button></a>
-         <a href="#"><button>Cancel</button></a>
+         <a href="#"><button class="btn">Hitung Total Bayar</button></a>
+         <a href="#"><button class="btn">Pesan Tiket</button></a>
+         <a href="#"><button class="btn">Cancel</button></a>
       </div>
 
    </form>
