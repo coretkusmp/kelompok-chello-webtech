@@ -89,7 +89,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // calculateTotal();
  });
 
- // passengerClass.addEventListener("change", updateTicketPrice);
+ passengerClass.addEventListener("change", () => {
+  const selectedClass = passengerClass.value;
+  const price = ticketPrices[selectedClass];
+
+  if (selectedClass === "economy") {
+   classImage.src =
+    "https://www.ana.co.jp/www2/travel-information/cabin/a380-economy-class/small-01.jpg";
+  } else if (selectedClass === "bussiness") {
+   classImage.src =
+    "https://statik.tempo.co/data/2021/11/16/id_1066782/1066782_720.jpg";
+  } else if (selectedClass === "executive") {
+   classImage.src =
+    "https://awsimages.detik.net.id/customthumb/2014/11/13/1382/082709_seatoman.jpg?w=600&q=90";
+  }
+
+  ticketPrice.textContent = formatRupiah(price);
+ });
 
  calculateButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -215,5 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
  regularPassengerInput.value = 0;
  elderlyPassengerInput.value = 0;
 
+ passengerClass.value = "economy";
  updateTicketPrice();
 });

@@ -49,6 +49,12 @@
          </li>
 
          <li>
+          <div class="fotoClassPenumpang">
+            <img id="classImage" style="width: 700px;" src="https://www.ana.co.jp/www2/travel-information/cabin/a380-economy-class/small-01.jpg" alt="Class Image">
+          </div>
+         </li>
+
+         <li>
             <div class="input-box">
                <label>Jadwal Keberangkatan</label> <input type="date">
             </div>
