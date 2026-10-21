@@ -93,6 +93,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectedClass = passengerClass.value;
   const price = ticketPrices[selectedClass];
 
+  if (selectedClass === "none") {
+   classImage.style.display = "none";
+  } else {
+   classImage.style.display = "block";
+  }
+
   if (selectedClass === "economy") {
    classImage.src =
     "https://www.ana.co.jp/www2/travel-information/cabin/a380-economy-class/small-01.jpg";
@@ -232,5 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
  elderlyPassengerInput.value = 0;
 
  passengerClass.value = "none";
+ classImage.style.display = "none";
  updateTicketPrice();
 });
