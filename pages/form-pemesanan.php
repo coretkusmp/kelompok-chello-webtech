@@ -81,7 +81,8 @@
 
          <li>
             <div class="input-box">
-               <label id="total-price">Total Bayar</label>
+               <label>Total Bayar</label>
+               <label id="total-price"></label>
             </div>
          </li>
 
