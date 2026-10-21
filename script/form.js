@@ -60,7 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const total = regularTotal + elderlyTotal;
 
-  totalPrice.textContent = `${formatRupiah(total)}`;
+  if (selectedClass === "none") {
+   totalPrice.textContent = "Rp 0";
+   ticketPrice.textContent = "Rp 0";
+  } else {
+   totalPrice.textContent = `${formatRupiah(total)}`;
+  }
+
+  // totalPrice.textContent = `${formatRupiah(total)}`;
 
   return total;
  }
@@ -94,8 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const price = ticketPrices[selectedClass];
 
   if (selectedClass === "none") {
+   ticketPrice.textContent = "-";
    classImage.style.display = "none";
   } else {
+   ticketPrice.textContent = formatRupiah(price);
    classImage.style.display = "block";
   }
 
@@ -109,8 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
    classImage.src =
     "https://awsimages.detik.net.id/customthumb/2014/11/13/1382/082709_seatoman.jpg?w=600&q=90";
   }
-
-  ticketPrice.textContent = formatRupiah(price);
  });
 
  calculateButton.addEventListener("click", (event) => {
