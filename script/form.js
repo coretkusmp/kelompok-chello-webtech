@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const total = regularTotal + elderlyTotal;
 
-  totalPrice.textContent = `Total Bayar: ${formatRupiah(total)}`;
+  totalPrice.textContent = `${formatRupiah(total)}`;
 
   return total;
  }
